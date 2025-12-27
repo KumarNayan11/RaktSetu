@@ -28,7 +28,7 @@ const continueChatFlow = ai.defineFlow(
 
     const response = await ai.generate({
       // FIX 2: Use the newer model (1.5 is retired/404)
-      model: 'googleai/gemini-2.5-flash', 
+      model: 'googleai/gemini-1.5-flash-001', 
       system: systemInstruction,
       messages: genkitHistory, // <--- Pass the converted history here
       config: {
