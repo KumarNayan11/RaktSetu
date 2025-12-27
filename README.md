@@ -1,4 +1,4 @@
-# RaktSetu - Emergency Blood Request Platform 
+# RaktSetu - Blood Request Platform 
 
 **RaktSetu** (meaning "Blood Bridge" in Hindi) is a modern, real-time web application designed to bridge the critical gap between blood donors and patients in need. It provides a verified and efficient platform for hospitals to broadcast their urgent blood requirements to the public.
 
