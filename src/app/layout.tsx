@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/next';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -26,6 +27,7 @@ export default function RootLayout({
         <main className="flex-1 container mx-auto px-4 py-8">
           {children}
         </main>
+        <Analytics />
         <Toaster />
         <Footer />
       </body>
