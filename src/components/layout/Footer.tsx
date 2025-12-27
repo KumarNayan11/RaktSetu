@@ -15,7 +15,7 @@ export function Footer() {
           {/* Update: Changed gap-2 to gap-4 to add more space */}
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <span>Made with ❤️ by Team Setu</span>
-            <Link href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            <Link href="https://github.com/KumarNayan11/RaktSetu" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               <Github className="h-5 w-5" />
             </Link>
           </div>
