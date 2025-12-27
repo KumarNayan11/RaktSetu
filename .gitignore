@@ -1,0 +1,57 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+jspm_packages/
+
+# Build outputs
+/.next/
+/out/
+/build
+
+# Turbopack
+.turbo
+
+# Static analysis
+/coverage
+/.nyc_output
+
+# Local Environment Variables (Keep this Safer Setup)
+# Exclude all .env files...
+.env.*
+# ...but explicitly allow .env.example
+!.env.example
+# ...and specifically exclude the standard .env file
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+firebase-debug.log
+
+# Editor directories and files
+.vscode
+.idea
+.idx/       # <--- Critical for Project IDX
+.vercel     # <--- Good for Vercel
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+*.pem       # <--- Added: Blocks private key files
+
+# Firebase (Crucial Additions)
+.firebase/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
