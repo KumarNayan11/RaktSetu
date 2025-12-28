@@ -104,7 +104,9 @@ RaktSetu demonstrates how **real-time systems, verified access, and AI assistanc
 
 ## 📸 Interface Preview
 
-*(You can add screenshots here later)*
+<img width="1838" height="889" alt="Screenshot 2025-12-28 191642" src="https://github.com/user-attachments/assets/083d84a9-c4df-40b3-9b31-3d2a79d54639" />
+<img width="1190" height="698" alt="Screenshot 2025-12-28 191738" src="https://github.com/user-attachments/assets/cd229053-f2d1-4f14-a3d3-d36a24e4c23d" />
+<img width="1195" height="723" alt="Screenshot 2025-12-28 191750" src="https://github.com/user-attachments/assets/da86cd61-be98-43b2-b4fa-9f6d26863732" />
 
 - **Public Feed:** A clean, card-based layout showing blood groups (A+, O-, etc.) and hospital locations.  
 - **Hospital Portal:** A robust dashboard for managing active/past requests.  
