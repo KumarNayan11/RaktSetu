@@ -107,19 +107,24 @@ RaktSetu demonstrates how **real-time systems, verified access, and AI assistanc
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/083d84a9-c4df-40b3-9b31-3d2a79d54639" width="300"/>
+      <img src="https://github.com/user-attachments/assets/083d84a9-c4df-40b3-9b31-3d2a79d54639" width="260"/>
       <br/>
       <b>Public Feed</b>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/cd229053-f2d1-4f14-a3d3-d36a24e4c23d" width="300"/>
+      <img src="https://github.com/user-attachments/assets/cd229053-f2d1-4f14-a3d3-d36a24e4c23d" width="260"/>
       <br/>
       <b>Hospital Portal</b>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/da86cd61-be98-43b2-b4fa-9f6d26863732" width="300"/>
+      <img src="https://github.com/user-attachments/assets/da86cd61-be98-43b2-b4fa-9f6d26863732" width="260"/>
       <br/>
       <b>Admin Panel</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/75530064-b7e2-48ea-91be-157e5b44f279" width="180"/>
+      <br/>
+      <b>RaktSahayak Chatbot</b>
     </td>
   </tr>
 </table>
@@ -129,6 +134,7 @@ RaktSetu demonstrates how **real-time systems, verified access, and AI assistanc
 - **AI Chat:** A sleek sidebar/modal for RaktSahayak.
 
 ---
+
 
 ## 🚀 Getting Started
 
