@@ -1,18 +1,39 @@
 # 🩸 RaktSetu (रक्तसेतु)
 
-**A real-time, AI-assisted prototype to connect hospitals with blood donors during emergencies.**
+**A Real-Time AI-Powered Bridge Between Life and Hope.**  
 
-Live Demo: https://rakt-setu-kappa.vercel.app/  
-GitHub Repository: https://github.com/KumarNayan11/RaktSetu  
+RaktSetu ("Blood Bridge") is a centralized, public-facing web application designed to connect hospitals in urgent need of blood with potential donors quickly and reliably. It serves as a verified platform where hospitals broadcast requirements, and the public can view and share these needs in real-time.
+
+🔗 **Live Demo:** https://rakt-setu-kappa.vercel.app/  
+📦 **GitHub Repository:** https://github.com/KumarNayan11/RaktSetu  
 
 ---
 
 ## 📌 About the Project
 
-RaktSetu is a functional **prototype web application** designed to address a critical real-world challenge:  
+**RaktSetu** is a functional **prototype web application** designed to address a critical real-world challenge:  
 **delay and misinformation in emergency blood procurement.**
 
-Hospitals often rely on WhatsApp forwards, phone calls, or unverified social media posts to arrange blood donors, which can lead to confusion, delays, and fake requests.
+### 🧠 Problem Statement
+
+In emergency situations, hospitals often rely on manual calls, WhatsApp forwards, or unverified social posts to arrange blood donors.  
+This leads to:
+
+- Delays  
+- Misinformation  
+- Fake or outdated requests  
+- Poor donor coordination  
+
+RaktSetu addresses this gap by providing a verified, real-time, and AI-assisted system for emergency blood requests.
+
+### 💡 Solution Overview
+
+RaktSetu acts as a digital bridge between:
+
+- Verified hospitals who raise urgent blood requests  
+- Local donors who can instantly view and respond  
+
+The platform prioritizes speed, trust, and accessibility.
 
 RaktSetu demonstrates how **real-time systems, verified access, and AI assistance** can improve emergency response efficiency and trust.
 
@@ -20,93 +41,74 @@ RaktSetu demonstrates how **real-time systems, verified access, and AI assistanc
 
 ---
 
-## 🎯 Objectives
+## 🎯 Core Objectives
 
 - Enable verified hospitals to raise urgent blood requests  
 - Allow donors to instantly view requests without login friction  
-- Reduce misinformation through authentication and trust  
+- Reduce misinformation through verification  
 - Use AI meaningfully to assist donors and hospitals  
 
 ---
 
 ## ✨ Key Features (Prototype Scope)
 
-### ⚡ Real-Time Blood Request Feed
-- Live feed powered by Firebase Firestore  
-- Real-time updates using Firestore listeners  
-- Displays blood group, hospital name, urgency, and timestamp  
-- No login required for donors to view requests  
+### 👥 Public Live Feed (Zero-Friction Access)
 
-### 🏥 Verified Hospital Access
-- Only authenticated hospitals can create blood requests  
-- Prevents fake or misleading donation appeals  
-- Each request originates from a verified source  
+- **Zero-Login Access:** Anyone can visit the homepage to view a live grid of all open blood requests from registered hospitals.  
+- **Real-Time Updates:** Powered by a direct connection to Firebase Firestore, new requests appear and fulfilled ones disappear automatically without a page refresh.  
+- **Smart Filtering:** Users can quickly filter the live feed by specific hospitals or blood groups to find the most relevant needs.  
+- **Ethical Sharing:** Each request card includes a "Share" button that opens pre-written messages in both English and Hindi.  
+- **Built-in Verification:** To combat misinformation, every shared message includes a unique verification link (`?requestId=...`) that takes users to a dedicated page confirming the request's current status.
 
-### 🤖 AI Assistance (Gemini-powered)
-- RaktSahayak AI assists donors with:
-  - Blood group compatibility  
-  - Basic donation eligibility  
-  - Post-donation guidance  
-- AI-generated shareable emergency messages:
-  - Optimized for WhatsApp and social platforms  
-  - Available in English and Hindi  
+### 🏥 Hospital Dashboard (Staff Portal)
 
-### 📢 Smart Sharing
-- One-click generation of formatted emergency messages  
-- Helps hospitals reach the community without spreading misinformation  
+- **Request Management:** A secure dashboard for hospital staff to create new requests by selecting blood group, number of units, and urgency level.  
+- **Live Status Control:** Staff can monitor their own active requests, edit details, or mark them as "closed" once fulfilled.
 
----
+### 🛡️ Admin Panel (Platform Oversight)
 
-## 🏗️ System Architecture (Prototype)
+- **Hospital Management:** An admin-only interface to onboard new hospitals to the platform.  
+- **Activation Control:** Admins can activate or deactivate hospital accounts to ensure only verified institutions can post public requests.  
+- **System Maintenance:** Includes tools to delete specific hospital records and a "Reset Database" feature for system-wide clearing.
 
-### Architecture Overview
+### 🤖 RaktSahayak (AI Assistant)
 
-1. Client Layer  
-   - Next.js web application  
-   - Public donor feed (no authentication)  
-   - Hospital dashboard (authenticated)  
-
-2. Application Layer  
-   - Next.js App Router  
-   - Server Actions / API routes  
-   - Zod-based input validation  
-
-3. Data Layer  
-   - Firebase Firestore  
-   - Real-time data synchronization  
-
-4. Authentication Layer  
-   - Firebase Authentication  
-   - Restricts request creation to hospitals  
-
-5. AI Layer  
-   - Firebase Genkit for AI flow orchestration  
-   - Google Gemini API for chatbot and content generation  
-
-6. Deployment  
-   - Hosted on Vercel  
+- **Interactive Chatbot:** A floating chat widget powered by Google’s Gemini AI via the Genkit SDK.  
+- **Purpose-Driven Guidance:** Programmed specifically to answer queries regarding donation eligibility, safety protocols, and post-donation care.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
 ### Frontend
-- Next.js 15 (App Router)  
-- Tailwind CSS  
-- shadcn/ui  
-- Framer Motion  
+- Built with **Next.js (App Router)** and **React** for a high-performance, SEO-friendly experience.
 
-### Backend & Infrastructure
-- Firebase Firestore  
-- Firebase Authentication  
-- Firebase Genkit  
+### Styling
+- Styled using **Tailwind CSS** with **shadcn/ui** for a modern, component-based user interface.
 
-### AI
-- Google Gemini API  
+### Backend & Database
+- Utilizes **Firebase Firestore** as a real-time NoSQL database.
+
+### Server Logic
+- Core application logic and database interactions are handled via **Next.js Server Actions**.
+
+### Generative AI
+- Integrates the **Google Gemini model** using the **Genkit SDK** to power the RaktSahayak chatbot.
 
 ### Tooling
-- Zod (validation)  
-- Lucide React (icons)  
+- **Zod** – type-safe form validation  
+- **Lucide React** – icons  
+- **Vercel** – deployment & hosting  
+
+---
+
+## 📸 Interface Preview
+
+*(You can add screenshots here later)*
+
+- **Public Feed:** A clean, card-based layout showing blood groups (A+, O-, etc.) and hospital locations.  
+- **Hospital Portal:** A robust dashboard for managing active/past requests.  
+- **AI Chat:** A sleek sidebar/modal for RaktSahayak.
 
 ---
 
@@ -156,11 +158,13 @@ src/
 
 ## 🔮 Future Enhancements
 
-- GPS & radius-based donor matching  
-- Donor availability and response tracking  
-- Admin analytics dashboard  
-- Mobile application (Flutter / React Native)  
-- Map-based hospital discovery  
+The following are planned extensions, not part of the current prototype:
+
+- 📍 GPS & radius-based donor matching  
+- 🔔 Donor availability and response tracking  
+- 📊 Admin analytics dashboard  
+- 📱 Mobile application (Flutter / React Native)  
+- 🗺️ Map-based hospital discovery  
 
 ---
 
@@ -178,19 +182,39 @@ The project demonstrates:
 
 ## 👥 Team Setu
 
-- Nayan Jain (Kumar Nayan)  
-  Application Developer (Firestudio)  
-  GitHub: https://github.com/KumarNayan11  
-
+- Nayan Jain  
 - Pankaj Sahu  
-  Team Lead  
-
 - Mayank Shrivastava  
-
 - Neha Sharma  
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create.
+
+1. Fork the Project  
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)  
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)  
+4. Push to the Branch (`git push origin feature/AmazingFeature`)  
+5. Open a Pull Request  
 
 ---
 
 ## 📄 License
 
-MIT License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## ✉️ Contact
+
+**Nayan Jain** – @KumarNayan11  
+
+**Project Link:** https://github.com/KumarNayan11/RaktSetu  
+
+---
+
+**Developed with ❤️ to save lives.**
+
+
