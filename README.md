@@ -5,7 +5,7 @@
 RaktSetu ("Blood Bridge") is a centralized, public-facing web application designed to connect hospitals in urgent need of blood with potential donors quickly and reliably. It serves as a verified platform where hospitals broadcast requirements, and the public can view and share these needs in real-time.
 
 🔗 **Live Demo:** https://rakt-setu-kappa.vercel.app/  
-📦 **GitHub Repository:** https://github.com/KumarNayan11/RaktSetu  
+📦 **GitHub Repository:** https://github.com/nayanj616/RaktSetu  
 
 ---
 
@@ -144,7 +144,7 @@ RaktSetu demonstrates how **real-time systems, verified access, and AI assistanc
 - Gemini API access  
 
 ### Installation
-git clone https://github.com/KumarNayan11/RaktSetu.git  
+git clone https://github.com/nayanj616/RaktSetu.git  
 cd RaktSetu  
 npm install  
 
@@ -233,9 +233,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## ✉️ Contact
 
-**Nayan Jain** – @KumarNayan11  
+**Nayan Jain** – @nayanj616  
 
-**Project Link:** https://github.com/KumarNayan11/RaktSetu  
+**Project Link:** https://github.com/nayanj616/RaktSetu  
 
 ---
 
